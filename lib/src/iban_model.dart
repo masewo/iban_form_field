@@ -29,7 +29,7 @@ class Iban {
   String get _concat => '$countryCode$checkDigits$basicBankAccountNumber';
 
   String get _example {
-    var particularSpecification = iban.specifications['CH'];
+    var particularSpecification = iban.specifications['DE'];
     if (iban.specifications.containsKey(countryCode)) {
       particularSpecification = iban.specifications[countryCode];
     }
